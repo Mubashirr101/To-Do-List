@@ -1,0 +1,27 @@
+This code creates a simple to-do list application using the Java Swing framework. The application allows users to add tasks to the list, remove tasks from the list, and mark tasks as completed.
+
+1. The first several lines import various classes and packages needed for the application, including the javax.swing package for creating the GUI, the java.awt package for handling events, and the java.text package for formatting dates.
+
+2. The ToDoList class is defined as a subclass of JFrame, which is a top-level window that contains other components such as buttons, labels, and lists.
+
+3. Within the ToDoList class, several static variables are defined: taskList, addTaskButton, removeTaskButton, doneTaskButton, newTaskField, deadlineField and taskModel. These variables will be used to create the different parts of the user interface.
+
+4. The main method is defined, which will be the entry point for the application when it is run. In the main method, a new JFrame is created and set to close when the "X" button is clicked.
+
+5. The taskModel, taskList and JScrollPane is created and set up. taskModel is a DefaultListModel, which is a model for the JList taskList, and listScroller is a JScrollPane that will allow the user to scroll through the task list.
+
+6. The "Add Task" button and text field are created and added to a new JPanel, along with a "Deadline" text field, and the JPanel is added to the JFrame.
+
+7. The "Remove Task" and "Done Task" buttons are created and added to their own JPanels, along with their respective ActionListeners.
+
+8. The "Remove Task" and "Done Task" buttons are added to a JPanel, which is added to the JFrame.
+
+9. The JFrame is packed and set to be visible to the user.
+
+10. The numberTasks() method is called to number all tasks.
+
+11. In the AddTaskListener class, when the "Add Task" button is clicked, the text from the newTaskField and deadlineField is retrieved, and a new Task object is created and added to the taskModel.
+
+12. In the RemoveTaskListener class, when the "Remove Task" button is clicked, the selected task is removed from the taskModel.
+
+13. In the DoneTaskListener class, when the "Done Task" button is clicked, the selected task is marked as completed.
